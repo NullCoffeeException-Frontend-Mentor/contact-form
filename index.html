@@ -7,11 +7,15 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
 
   <title>Frontend Mentor | Contact form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
 </head>
 
@@ -19,45 +23,51 @@
   <main>
     <div class="wrapper">
       <h1>Contact Us</h1>
-      <div class="name">
-        <div class="first-name">
+      <div class="name-container">
+        <div class="name">
           <label>First Name</label>
           <input>
-          <p>This field is required</p>
+          <p id="warn-first-name" class="hidden">This field is required</p>
         </div>
-        <div class="second-name">
+        <div class="name">
           <label>Last Name</label>
           <input>
-          <p>This field is required</p>
+          <p id="warn-second-name" class="hidden">This field is required</p>
         </div>
       </div>
       <div class="address">
         <label>Email Address</label>
         <input>
-        <p>Please enter a valid email address</p>
-        <p>This field is required</p>
+        <p id="warn-email-validity" class="hidden">Please enter a valid email address</p>
+        <p id="warn-email" class="hidden">This field is required</p>
       </div>
       <div class="query">
         <label>Query Type</label>
         <div class="query-selection">
-          <input id="general-enquiry">
-          <label for="general-enquiry">General Enquiry</label>
-          <input id="support-request">
-          <label for="support-request">Support Request</label>
-          <p>Please select a query type</p>
+          <input type="radio" name="query-type" id="general-enquiry">
+          <label for="general-enquiry">
+            <span>General Enquiry</span>
+          </label>
+          <input type="radio" name="query-type" id="support-request">
+          <label for="support-request">
+            <span>Support Request</span>
+          </label>
+          <p id="warn-query" class="hidden">Please select a query type</p>
         </div>
       </div>
       <div class="message">
         <label>Message</label>
         <input>
-        <p>This field is required</p>
+        <p id="warn-message" class="hidden">This field is required</p>
       </div>
-      <input type="checkbox" id="contact"> <span>I consent to being contacted by the team</span>
-      <p>To submit this form, please consent to being contacted</p>
+      <div class="contact">
+        <input type="checkbox" id="contact-checkbox"> <span>I consent to being contacted by the team</span>
+        <p id="warn-contact" class="hidden">To submit this form, please consent to being contacted</p>
+      </div>
 
       <button>Submit</button>
 
-      <div class="modal">
+      <div class="modal hidden">
         <p>Message Sent!</p>
         <p>Thanks for completing the form. We'll be in touch soon!</p>
       </div>
@@ -65,4 +75,5 @@
   </main>
 
 </body>
+
 </html>
