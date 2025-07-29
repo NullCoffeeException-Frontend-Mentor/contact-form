@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | Contact form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
+  <script src="main.js" defer></script>
 </head>
+
 <body>
+  <main>
+    <div class="wrapper">
+      <h1>Contact Us</h1>
+      <div class="name">
+        <div class="first-name">
+          <label>First Name</label>
+          <input>
+          <p>This field is required</p>
+        </div>
+        <div class="second-name">
+          <label>Last Name</label>
+          <input>
+          <p>This field is required</p>
+        </div>
+      </div>
+      <div class="address">
+        <label>Email Address</label>
+        <input>
+        <p>Please enter a valid email address</p>
+        <p>This field is required</p>
+      </div>
+      <div class="query">
+        <label>Query Type</label>
+        <div class="query-selection">
+          <input id="general-enquiry">
+          <label for="general-enquiry">General Enquiry</label>
+          <input id="support-request">
+          <label for="support-request">Support Request</label>
+          <p>Please select a query type</p>
+        </div>
+      </div>
+      <div class="message">
+        <label>Message</label>
+        <input>
+        <p>This field is required</p>
+      </div>
+      <input type="checkbox" id="contact"> <span>I consent to being contacted by the team</span>
+      <p>To submit this form, please consent to being contacted</p>
 
-  Contact Us
+      <button>Submit</button>
 
-  First Name
-  This field is required
+      <div class="modal">
+        <p>Message Sent!</p>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    </div>
+  </main>
 
-  Last Name
-  This field is required
-
-  Email Address
-  Please enter a valid email address
-  This field is required
-
-  Query Type
-  General Enquiry
-  Support Request
-  Please select a query type
-
-  Message
-  This field is required
-
-  I consent to being contacted by the team
-  To submit this form, please consent to being contacted
-
-  Submit
-
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon!
-  
 </body>
 </html>
