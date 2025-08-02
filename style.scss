@@ -10,7 +10,7 @@ html {
 
 body {
     background-color: hsl(148, 38%, 91%);
-    font-family: "Karla", sans-serif;
+    font-family: 'Karla', sans-serif;
     color: hsl(187, 24%, 22%);
 }
 
@@ -44,11 +44,9 @@ input {
     border: 1px solid hsl(186, 15%, 59%);
     border-radius: 0.4em;
 }
-
 input:hover {
     cursor: pointer;
 }
-
 input:focus {
     outline: none;
     border: 1.3px solid hsl(169, 82%, 27%);
@@ -60,7 +58,6 @@ input:focus {
     align-items: center;
     gap: 1rem;
 }
-
 .name {
     width: 50%;
     display: flex;
@@ -71,7 +68,6 @@ input:focus {
     display: flex;
     flex-direction: column;
 }
-
 .address input {
     width: 100%;
 }
@@ -80,11 +76,9 @@ input:focus {
     display: flex;
     gap: 1rem;
 }
-
-.query-selection input[name=query-type] {
+.query-selection input[name="query-type"] {
     display: none;
 }
-
 .query-selection label {
     margin-bottom: 2rem;
     display: flex;
@@ -94,7 +88,6 @@ input:focus {
     border: 1px solid hsl(186, 15%, 59%);
     border-radius: 0.4rem;
 }
-
 .query-selection label:hover {
     cursor: pointer;
 }
@@ -103,7 +96,6 @@ input:focus {
     display: flex;
     flex-direction: column;
 }
-
 .message input {
     height: 6.4rem;
 }
@@ -113,8 +105,7 @@ input:focus {
     display: flex;
     align-items: center;
 }
-
-.contact input[type=checkbox] {
+.contact input[type='checkbox'] {
     margin: 0 1.2rem 0 0;
     border-radius: 0;
 }
@@ -130,7 +121,6 @@ button {
     border: 0;
     border-radius: 0.5rem;
 }
-
 button:hover {
     background-color: hsl(170, 82%, 13%);
     cursor: pointer;
@@ -138,4 +128,4 @@ button:hover {
 
 .hidden {
     display: none;
-}/*# sourceMappingURL=style.css.map */
+}
