@@ -10,3 +10,5 @@
 - input 아래에 경고 문구를 넣을 의향이 있다면, margin-bottom을 주지 말자. 차라리 아래 요소에 margin-top을 넣자.
 - html의 기본 font-size는 10px을 써 줘야 rem, em을 쓸 때 계산하기가 편하다.
 - 선택자는 구체적일수록 우선순위가 높다.
+- label은 :focus가 불가능하다. 그러나 꼭 주고 싶다면 tabindex="0"을 주면 된다.
+- 길이 값을 줄 때 calc()는 유용하다.

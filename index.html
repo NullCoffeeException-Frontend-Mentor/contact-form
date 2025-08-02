@@ -45,11 +45,17 @@
         <label>Query Type</label>
         <div class="query-selection">
           <input type="radio" name="query-type" id="general-enquiry">
-          <label for="general-enquiry">
+          <label for="general-enquiry" tabindex="0">
+            <div class="circle">
+              <div class="checkmark"></div>
+            </div>
             <span>General Enquiry</span>
           </label>
           <input type="radio" name="query-type" id="support-request">
-          <label for="support-request">
+          <label for="support-request" tabindex="0">
+            <div class="circle">
+              <div class="checkmark"></div>
+            </div>
             <span>Support Request</span>
           </label>
           <p id="warn-query" class="hidden">Please select a query type</p>
