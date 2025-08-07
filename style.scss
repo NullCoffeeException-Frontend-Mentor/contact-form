@@ -39,7 +39,6 @@ label, p {
 }
 
 input {
-    margin-bottom: 1.6em;
     padding: 0 1rem;
     height: 2em;
     border: 1px solid hsl(186, 15%, 59%);
@@ -66,11 +65,16 @@ input:focus {
 }
 
 .address {
+    margin-top: 1.6em;
     display: flex;
     flex-direction: column;
 }
 .address input {
     width: 100%;
+}
+
+.query {
+    margin-top: 1.6em;
 }
 
 .query-selection {
@@ -96,7 +100,6 @@ input:focus {
     border-radius: calc(0.5rem - 2px);
 }
 .query-selection label {
-    margin-bottom: 2rem;
     padding: 0 1rem;
     display: flex;
     align-items: center;
@@ -120,6 +123,7 @@ input:focus {
 }
 
 .message {
+    margin-top: 1.6em;
     display: flex;
     flex-direction: column;
 }
@@ -127,17 +131,21 @@ input:focus {
     height: 6.4rem;
 }
 
-.contact {
-    margin-bottom: 2rem;
+.checkbox-container {
+    margin-top: 1.6em;
     display: flex;
     align-items: center;
 }
-.contact input[type='checkbox'] {
+.checkbox-container input[type='checkbox'] {
     margin: 0 1.2rem 0 0;
     border-radius: 0;
 }
+.checkbox-container span {
+    font-size: 1em;
+}
 
 button {
+    margin-top: 2em;
     padding: 1.1rem;
     width: 100%;
     background-color: hsl(169, 82%, 27%);
@@ -151,8 +159,4 @@ button {
 button:hover {
     background-color: hsl(170, 82%, 13%);
     cursor: pointer;
-}
-
-.hidden {
-    display: none;
 }
