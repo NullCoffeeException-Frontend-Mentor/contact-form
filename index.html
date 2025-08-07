@@ -23,63 +23,65 @@
   <main>
     <div class="wrapper">
       <h1>Contact Us</h1>
-      <div class="name-container">
-        <div class="name">
-          <label>First Name<span>*</span></label>
+
+      <form id="contact-form">
+        <div class="name-container">
+          <div class="name">
+            <label>First Name<span>*</span></label>
+            <input required>
+            <p class="warning-message">This field is required</p>
+          </div>
+          <div class="name">
+            <label>Last Name<span>*</span></label>
+            <input required>
+            <p class="warning-message">This field is required</p>
+          </div>
+        </div>
+        <div class="address">
+          <label>Email Address<span>*</span></label>
+          <input required>
+          <p class="warning-message">Please enter a valid email address</p>
+        </div>
+        <div class="query">
+          <label>Query Type<span>*</span></label>
+          <div class="query-selection">
+            <input type="radio" name="query-type" id="general-enquiry" required>
+            <label for="general-enquiry" tabindex="0">
+              <div class="circle">
+                <div class="checkmark"></div>
+              </div>
+              <span>General Enquiry</span>
+            </label>
+            <input type="radio" name="query-type" id="support-request">
+            <label for="support-request" tabindex="0">
+              <div class="circle">
+                <div class="checkmark"></div>
+              </div>
+              <span>Support Request</span>
+            </label>
+          </div>
+          <p class="warning-message" id="warning-query">Please select a query type</p>
+        </div>
+        <div class="message">
+          <label>Message<span>*</span></label>
           <input required>
           <p class="warning-message">This field is required</p>
         </div>
-        <div class="name">
-          <label>Last Name<span>*</span></label>
-          <input required>
-          <p class="warning-message">This field is required</p>
-        </div>
-      </div>
-      <div class="address">
-        <label>Email Address<span>*</span></label>
-        <input required>
-        <p class="warning-message">Please enter a valid email address</p>
-        <p class="warning-message">This field is required</p>
-      </div>
-      <div class="query">
-        <label>Query Type<span>*</span></label>
-        <div class="query-selection">
-          <input type="radio" name="query-type" id="general-enquiry" required>
-          <label for="general-enquiry" tabindex="0">
-            <div class="circle">
-              <div class="checkmark"></div>
-            </div>
-            <span>General Enquiry</span>
-          </label>
-          <input type="radio" name="query-type" id="support-request">
-          <label for="support-request" tabindex="0">
-            <div class="circle">
-              <div class="checkmark"></div>
-            </div>
-            <span>Support Request</span>
-          </label>
-        </div>
-        <p class="warning-message">Please select a query type</p>
-      </div>
-      <div class="message">
-        <label required>Message<span>*</span></label>
-        <input>
-        <p class="warning-message">This field is required</p>
-      </div>
-      <div class="contact">
-        <div class="checkbox-container">
-          <input type="checkbox" id="contact-checkbox" required> <span>I consent to being contacted by the team</span>
-        </div>
-        
-        <p class="warning-message">To submit this form, please consent to being contacted</p>
-      </div>
+        <div class="contact">
+          <div class="checkbox-container">
+            <input type="checkbox" id="contact-checkbox" required> <span>I consent to being contacted by the team</span>
+          </div>
 
-      <button>Submit</button>
+          <p class="warning-message" id="warning-checkbox">To submit this form, please consent to being contacted</p>
+        </div>
 
-      <div class="modal hidden">
-        <p>Message Sent!</p>
-        <p>Thanks for completing the form. We'll be in touch soon!</p>
-      </div>
+        <button type="submit" id="btn-submit">Submit</button>
+
+        <div class="modal hidden">
+          <p>Message Sent!</p>
+          <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+      </form>
     </div>
   </main>
 

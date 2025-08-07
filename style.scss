@@ -60,7 +60,7 @@ input:focus {
 .name-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     gap: 1rem;
 }
 .name {
@@ -167,9 +167,22 @@ button:hover {
 }
 
 .warning-message {
+    display: none;
     margin-top: 0.8rem;
     margin-bottom: 0;
     padding: 0;
     font-size: 1em;
     color: hsl(0, 66%, 54%);
+}
+
+.warning-message-show {
+    display: block;
+}
+
+form.submitted-form input:invalid {
+    border-color: hsl(0, 66%, 54%);
+}
+
+form.submitted-form input:invalid ~ .warning-message {
+    display: block;
 }
