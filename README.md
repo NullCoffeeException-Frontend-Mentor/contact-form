@@ -19,3 +19,4 @@
 - input type="checkbox"는 자바스크립트에서 .checked 가 true인지 false인지로 값을 받을 수 있다.
 - forEach()는 안에 람다함수를 인자로 받는다.
 - document.querySelected로 어떤 const 변수에 값을 저장하고, 만약 없을 경우 (!변수명) 으로 해당 요소가 없었는지를 판별할 수 있다.
+- 브랜치의 이름을 바꾸고 싶다면 git branch -m 브랜치명 을 쓰면 된다.

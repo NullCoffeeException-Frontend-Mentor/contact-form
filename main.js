@@ -8,8 +8,12 @@ const warningCheckbox = document.querySelector('#warning-checkbox');
 
 const submitButton = document.querySelector('#btn-submit');
 
+const modal = document.querySelector('#modal');
 
-submitButton.addEventListener('click', function() {
+
+submitButton.addEventListener('click', function(e) {
+    e.preventDefault();
+
     contactForm.classList.add("submitted-form");
     const selectedQuery = document.querySelector('input[name="query-type"]:checked');
 
@@ -19,6 +23,12 @@ submitButton.addEventListener('click', function() {
 
     if (!checkbox.checked) {
         warningCheckbox.classList.add("warning-message-show");
+    }
+
+    if (contactForm.checkValidity()) {
+        modal.classList.add('modal-show');
+        contactForm.classList.remove("submitted-form");
+        contactForm.reset();
     }
 })
 
